@@ -1,0 +1,42 @@
+ html, body, #map {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: rgb(171,193,21);
+background: linear-gradient(90deg, rgba(171,193,21,1) 0%, rgba(250,243,8,1) 35%, rgba(235,255,89,1) 54%, rgba(255,85,0,1) 100%);
+            }
+nav:before{
+  content:''; 
+  display:block;
+  height:100px;
+  width:100%;
+  background:#FFD700;
+  position:absolute;
+  left:0;
+  z-index:-1;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  height:100px;
+}
+
+ul li{
+  float:left;
+}
+
+ul li a{
+  color:#fff;
+  display:block;
+  height:100px;
+  padding:0 120px;
+  text-transform:uppercase;
+  text-decoration:none;
+  line-height:100px;
+}
+
+ul li a:hover{
+  background:#d34d43;
+}
