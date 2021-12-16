@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #fff 75%, #ffd700 25%);
+    font-family: "PT Sans", sans-serif;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list {
+    list-style: none;
+    font-size: 18px;
+    line-height: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+.nav__links {
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+.ducks-photo {
+    width: 100px;
+    height: 100px;
+}
+.ducks__desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.t0p{
+position: relative;
+bottom: 100px;
+}

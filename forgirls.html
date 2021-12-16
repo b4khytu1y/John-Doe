@@ -1,31 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Website</title>
-	<link rel="stylesheet" href="styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <title>Ducks-grid</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body class="page__body">
+        <div id="cursor"></div>
+  <div id="aura"></div>
+        <header class="header">
+            <nav>
+            <div class="navigation">
+        <div class="logo">
+            <a href="index.html"> <img src="images/logotype.png" alt="" class="logotype"></a>
+        </div>
 
-	<div class="navigation">
-		<div class="logo">
-			<a href="index.html"> <img src="images/logotype.png" alt="" class="logotype"></a>
-		</div>
+        <div class="nav-menu">
+            <ul class="menu">
+                <li class="nav-item"><a href="forguys.html" class="nav-link">For Guys</a></li>
+                <li class="nav-item"><a href="forgirls.html" class="nav-link">For Girls</a></li>
+                <li class="nav-item"><a href="basket.html" class="nav-link">Basket</a></li>
+            
+            </ul>
+        </div>
 
-		<div class="nav-menu">
-			<ul class="menu">
-		<li class="nav-item"><a href="forguys.html" class="nav-link">For Guys</a></li>
-				<li class="nav-item"><a href="forgirls.html" class="nav-link">For Girls</a></li>
-				<li class="nav-item"><a href="basket.html" class="nav-link">Basket</a></li>
-			</ul>
-		</div>
+        <div class="personal-item">
+            <div class="auth">
+                <div id="login_div" class="login">
+                    <a href="./login.html" id="loginInfo" class="auth-link"><i class="fas fa-user-circle"></i>Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+             </header>
+            
+            <section>
 
-		<script src="./scripts/app.js"></script>
+            <div class="ducks__desk">
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 1</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 2</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 3</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 4</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 5</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 6</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 7</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 8</div>
+                        </div>
+                    </div>
+                    <div class="ducks__rec">
+                        <div class="ducks__photo">
+                            <img
+                                src="images/rubber_duck_PNG41.png"
+                                alt=""
+                                class="ducks-photo"
+                            />
+                            <div class="duck-text">Duck 9</div>
+                        </div>
+                    </div>  
+       
+      <div class="s_listing s_list_view clearfix">
+</section>
 
-</body>
+  <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3>Company<span>logo<img src="images/logotype.png" class="sizeduck"></span></h3>
+
+                <p class="footer-links">
+                    <a href="#" class="link-1">Home</a>
+                    
+                    <a href="#">For Guys</a>
+                
+                    <a href="#">For Girls</a>
+                    
+                    <a href="#">Primary page</a>
+                    
+                    <a href="#">Login</a>
+                </p>
+
+                <p class="footer-company-name">Rubber Duck Jack © 2021</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Kazakhstan</span><a href="map.html">Almaty</a></p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+7-747-311-12-98</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">satera1583@gmail.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About our company</span>
+                    Our company sells the best rubber ducks at the lowest price.
+                </p>
+
+              
+            </div>
+
+        </footer>
+    </body>
+    <script src="./scripts/app.js"></script>
 </html>
