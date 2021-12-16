@@ -26,14 +26,14 @@ $(document).ready(function() {
 		tilty  = dx / cx
 		radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2))
 		degree = radius * 12
-		gsap.to('.text-inform', 1, { transform: `rotate3d( ${tiltx}, ${tilty}, 0, ${degree}deg )` })
+		gsap.to('.main-information', 1, { transform: `rotate3d( ${tiltx}, ${tilty}, 0, ${degree}deg )` })
 
 	}
 
-
 	const cursor   = document.getElementById('cursor'),
 				follower = document.getElementById('aura'),
-				links    = document.getElementsByTagName('a')
+				links    = document.getElementsByTagName('a'),
+                hover = document.getElementsByClassName('hovered')
 
 	mouseX = 0, mouseY = 0, posX = 0, posY = 0
 
@@ -79,6 +79,20 @@ $(document).ready(function() {
 		})
 
 		links[i].addEventListener('mouseout', () => {
+			cursor.classList.remove('active')
+			follower.classList.remove('active')
+		})
+
+	}
+
+    for(let i = 0; i < hover.length; i++) {
+
+		hover[i].addEventListener('mouseover', () => {
+			cursor.classList.add('active')
+			follower.classList.add('active')
+		})
+
+		hover[i].addEventListener('mouseout', () => {
 			cursor.classList.remove('active')
 			follower.classList.remove('active')
 		})

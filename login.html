@@ -33,23 +33,23 @@
          <div class="form-container">
             <div class="slide-controls">
                <input type="radio" name="slide" id="login" checked>
-               <input type="radio" name="slide" id="signup">
+               <input type="radio" name="slide" id="signup" class="hovered">
                <label for="login" class="slide login">Login</label>
                <label for="signup" class="slide signup">Signup</label>
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
                <form action="#" class="login">
-                  <div class="field">
+                  <div class="field hovered">
                      <input type="text" id="email" placeholder="Email Address" required>
                   </div>
-                  <div class="field">
+                  <div class="field hovered">
                      <input type="password" id="password" placeholder="Password" required>
                   </div>
                   <div class="pass-link">
                      <a href="#">Forgot password?</a>
                   </div>
-                  <div class="field btn">
+                  <div class="field btn hovered">
                      <div class="btn-layer"></div>
                      <input type="submit" onclick="Authorize()" value="Login">
                   </div>
@@ -58,16 +58,16 @@
                   </div>
                </form>
                <form action="#" class="signup">
-                  <div class="field">
+                  <div class="field hovered">
                      <input type="text" id="email_reg" placeholder="Email Address" required>
                   </div>
-                  <div class="field">
+                  <div class="field hovered">
                      <input type="password" id="password_reg" placeholder="Password" required>
                   </div>
-                  <div class="field">
+                  <div class="field hovered">
                      <input type="password" id="password_reg2" placeholder="Confirm password" required>
                   </div>
-                  <div class="field btn">
+                  <div class="field btn hovered">
                      <div class="btn-layer"></div>
                      <input type="submit" onclick="Register()" value="Signup">
                   </div>

@@ -14,6 +14,7 @@ if (activeUser != null) {
     button.textContent = "logout";
     button.setAttribute("onclick", "Logout()");
     button.classList.add("logout-btn")
+    button.classList.add("hovered")
 
     div.appendChild(button);
 }
