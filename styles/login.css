@@ -273,3 +273,48 @@ ul li a:hover {
 #err_msg {
   color: red;
 }
+
+/* cursor */
+
+* {
+  cursor: none;
+}
+
+#cursor,
+#aura {
+  position: absolute;
+  border-radius: 100%;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+#cursor {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(224, 21, 51, 1);
+  transform: scale(1);
+}
+#cursor.active {
+  opacity: 0;
+  transform: scale(0);
+}
+
+#aura {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(224, 21, 51, 0.2);
+  background-color: rgba(224, 21, 51, 0.27);
+  transform: translate(5px, 5px);
+}
+#aura.active {
+  border: 1.2px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.3);
+}
+
+#aura.hidden,
+#cursor.hidden {
+  transform: scale(0.001);
+}
