@@ -22,3 +22,4 @@ function Logout() {
     localStorage.removeItem(activeUserTable);
     window.open(welcomePage, "_self", "resizable=yes");
 }
+

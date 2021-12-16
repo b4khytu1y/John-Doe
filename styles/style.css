@@ -285,3 +285,30 @@ body {
   cursor: pointer;
   color: #e01533;
 }
+
+/* cursor */
+
+#cursor,
+#aura {
+  position: absolute;
+  border-radius: 100%;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33);
+  transform: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33);
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+#cursor {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#aura {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.027);
+  transform: translate(5px, 5px);
+}
