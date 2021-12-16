@@ -42,7 +42,7 @@ function Register() {
     }
 
     if (checkUser(login) == false) {
-        document.getElementById("err_msg").innerHTML = "Invalid email";
+        document.getElementById("err_msg").innerHTML = "User already exists";
         return
     }
 
@@ -187,13 +187,4 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
-}
-
-var activeUser = JSON.parse(localStorage.getItem(activeUserTable));
-if (activeUser != null) {
-    if (activeUser.isAdmin) {
-        window.open(adminPage, '_self', 'resizable=yes');
-    }else {
-        window.open(welcomePage, '_self', 'resizable=yes');
-    }
 }
