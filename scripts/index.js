@@ -11,6 +11,7 @@ if (activeUser != null) {
     var div = document.getElementById(logDiv);
 
     login.innerHTML = activeUser.email;
+    login.setAttribute("href", "#")
     button.textContent = "logout";
     button.setAttribute("onclick", "Logout()");
     button.classList.add("logout-btn")

@@ -10,7 +10,8 @@ $(document).ready(function() {
 		clientX = e.pageX
 		clientY = e.pageY
 
-		request = requestAnimationFrame(updateMe)
+
+        request = requestAnimationFrame(updateMe)
 
 		mouseCoords(e)
 		cursor.classList.remove('hidden')
@@ -27,7 +28,6 @@ $(document).ready(function() {
 		radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2))
 		degree = radius * 12
 		gsap.to('.main-information', 1, { transform: `rotate3d( ${tiltx}, ${tilty}, 0, ${degree}deg )` })
-
 	}
 
 	const cursor   = document.getElementById('cursor'),

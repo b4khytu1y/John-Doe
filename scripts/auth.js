@@ -10,6 +10,12 @@ const activeUserTable = "ActiveUser"
 const adminPage = "../admin.html"
 const welcomePage = "../index.html"
 
+var checkActiveUser = JSON.parse(localStorage.getItem(usersTable))
+if (checkActiveUser.email != null) {
+  alert("You already logged in")
+  window.open(welcomePage, "_self", "resizable=yes")
+}
+
 function validateEmail(email)  {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
@@ -103,7 +109,11 @@ function Authorize() {
             if (foundUser.isAdmin) {
                 window.open(adminPage, '_self', 'resizable=yes');
             }
-            window.open(welcomePage, "_self", "resizable=yess");
+
+            if (!foundUser.isAdmin) {
+              window.location(welcomePage, "_self", "resizable=yes");
+            }
+
             return
         }
     
@@ -137,6 +147,7 @@ function ResetPassword() {
 
     return
 }
+
 
 var myInput = document.getElementById(regPassField);
 var letter = document.getElementById("letter");
