@@ -34,9 +34,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-left: 6%;
+    margin-top: 13%;
+    margin-bottom: 9%;
 }
+
 
 .t0p{
 position: relative;
