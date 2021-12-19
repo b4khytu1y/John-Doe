@@ -4,8 +4,50 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Admin panel</title>
+	<link rel="stylesheet" type="text/css" href="styles/admin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./scripts/app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+
 </head>
 <body>
+<div id="cursor"></div>
+<div id="aura"></div>
+<header><h2 style="text-align: center;">
+This is admin panel</h2>
+
+<nav>
+		<div class="personal-item">
+			<div class="auth">
+				<div id="login_div" class="login">
+					<a href="./login.html" id="loginInfo" class="auth-link"><i class="fas fa-user-circle"></i><h3 class="forward">Login</h3></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+</header>
+<form action="action.php" method="POST">
+<button type="submit">Disable</button>
+<button type="submit">Enable</button>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Username</th>
+			<th>Password</th>
+			
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>satera183@gmail.com</td>
+			<td>123</td>
+	</tbody>
+</table>
+
 
 </body>
 </html>
