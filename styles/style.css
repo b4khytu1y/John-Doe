@@ -14,7 +14,10 @@ body {
   display: flex;
   align-items: center;
 }
-
+li{
+  position: relative;
+  margin-right: 80px;
+}
 .logo {
   width: 15%;
   display: flex;
@@ -36,6 +39,8 @@ body {
   align-items: center;
   list-style: none;
   width: 100%;
+    margin-left: 100px;
+
 }
 
 .nav-item {

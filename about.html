@@ -1,40 +1,115 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
- <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-     <link rel="stylesheet" href="styles/about.css" type="text/css"> 
-  <title>About</title>
- </head>
- <body>
-  <div id="cursor"></div>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/about2.css">
+</head>
+<body>
+<nav>
+	<div id="cursor"></div>
 	<div id="aura"></div>
 
-<ul>
-             <li><a href="index.html"><font face="Druk Wide"><b>Main page</b></font></a></li>
-           
-             <li><a href="about.html"><font face="Druk Wide"><b>About us</b></font></a></li>
+	<div class="navigation">
+		<div class="logo">
+			<a href="index.html"> <img src="images/logotype.png" alt="" class="logotype"></a>
+		</div>
 
-             <li><a href="login.html"><font face="Druk Wide"><b>Sign in</b></font></a>
+		<div class="nav-menu">
+			 <ul class="menu2">
+                <li class="nav-item"><a href="forguys.html" class="nav-link">Shops</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="basket.html" class="nav-link">Basket</a></li>
+            
+            </ul>
+		</div>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl"><font face="Druk Wide"><b>Exit</b></font></a>
-         </ul>
-
-     <style>
-     hr {
-    border: none;
-    background-color: black; 
-    color: red; 
-    height: 4px; 
-   }
-     </style>
+		<div class="personal-item">
+			<div class="auth">
+				<div id="login_div" class="login">
+					<a href="./login.html" id="loginInfo" class="auth-link"><i class="fas fa-user-circle"></i>Login</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<section class="downbreaker">
 <div class="wrap">
   <div class="card">
     <div class="front"><span><img src="https://ceditor.setka.io/clients/ihN63X3GPpwHGoUWGJ3XfC32GauJoi5d/css/assets/36300/img/pngguru.com_21__iLZiCA.png" height="240px" width="300px"></span></div>
       <div class="back"><span><h2><center>About us</center></h2><hr><h4><center> We are a company that sells rubber ducks. Our ducks are of very high quality and we assure you that with our ducks you can take a bath in comfort.</center></h4><hr></span></div>
   </div>
 </div>
-<script src="./scripts/app.js"></script>
- </body>
+</section>
+
+<section class="underdown">
+  <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3>Company<span>logo<img src="images/logotype.png" class="sizeduck"></span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html" class="link-1">Home</a>
+                    
+                    <a href="forguys.html">For Guys</a>
+                
+                    <a href="forgirls.html">For Girls</a>
+                    
+                    <a href="main.html">Primary page</a>
+                    
+                    <a href="login.html">Login</a>
+                </p>
+
+                <p class="footer-company-name">Rubber Duck Jack © 2021</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Kazakhstan</span><a href="map.html">Almaty</a></p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+7-747-311-12-98</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">satera1583@gmail.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About our company</span>
+                    Our company sells the best rubber ducks at the lowest price.
+                </p>
+                <p class="footer-company-about">
+                    <span>You can find additional information here</span>
+                    <a href="https://vk.com/"><img src="https://pngicon.ru/file/uploads/vk-256x256.png" class="icon"></a>
+                     <a href="https://www.youtube.com/watch?v=bMD0O301dMg"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" class="icon"></a>
+                     <a href="https://github.com/NurikdeMoon/John-Doe"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon"></a>
+
+                </p>
+             
+            </div>
+
+        </footer>
+        </section>
+	<script src="./scripts/app.js"></script>
+	<script src="./scripts/index.js"></script>
+
+</body>
 </html>
