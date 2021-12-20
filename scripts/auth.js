@@ -7,15 +7,42 @@ const regPassField2 = "password_reg2";
 
 const usersTable = "Users";
 const activeUserTable = "ActiveUser"
-const adminPage = "../admin.html"
-const welcomePage = "../index.html"
+const adminPage = "./admin.html"
+const welcomePage = "./index.html"
 
-var checkActiveUser = JSON.parse(localStorage.getItem(usersTable))
-if (checkActiveUser.email != null) {
+var checkActiveUser = JSON.parse(localStorage.getItem(activeUserTable))
+if (checkActiveUser != null) {
   alert("You already logged in")
   window.open(welcomePage, "_self", "resizable=yes")
 }
 
+let users = JSON.parse(localStorage.getItem("Users"))
+    if (users == null) {
+        users = []
+        var admin = {
+            email: "admin",
+            password: "admin",
+            isAdmin: true,
+            isBanned: false
+        }
+    
+        users.push(admin)
+    
+        localStorage.setItem("Users", JSON.stringify(users))
+    }else {
+        admin = users.find(a => a.email === "admin")
+        if (admin == null) {
+          var admin = {
+            email: "admin",
+            password: "admin",
+            isAdmin: true,
+            isBanned: false
+        }
+
+            users.push(admin)
+            localStorage.setItem("Users", JSON.stringify(users))
+        }
+    }
 function validateEmail(email)  {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
@@ -108,12 +135,9 @@ function Authorize() {
     
             if (foundUser.isAdmin) {
                 window.open(adminPage, '_self', 'resizable=yes');
+                return
             }
-
-            if (!foundUser.isAdmin) {
-              window.location(welcomePage, "_self", "resizable=yes");
-            }
-
+              window.open(welcomePage, "_self", "resizable=yes");
             return
         }
     
@@ -147,7 +171,6 @@ function ResetPassword() {
 
     return
 }
-
 
 var myInput = document.getElementById(regPassField);
 var letter = document.getElementById("letter");

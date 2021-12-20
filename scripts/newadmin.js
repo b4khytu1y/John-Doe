@@ -7,10 +7,9 @@ $(document).ready(function() {
 
     if (!auth.isAdmin) {
         alert("Access denied")
-        window.open("../home.html", "_self", "resizable=yes")
+        window.open("../index.html", "_self", "resizable=yes")
         return
     }
-
 
     $('.ban').click(function() {
         let index = $('.ban').index(this)
@@ -41,14 +40,23 @@ $(document).ready(function() {
     })
 
     $('#addAdmin').click(function() {
-        $('#addAdminDiv').css("display", "block")
+        $('#create_form').css("display", "block")
+        $('#form_email').attr("value", "")
+        $('#form_password').attr("value", "")
+        $('#form_isAdmin').attr("value", "")
+        $('#form_isBanned').attr("value", "")
+
     })
 
-    $('#close_addAdminDiv').click(function() {
-        $('#addAdminDiv').css("display", "block")
+    $('#closeForm').click(function() {
+        $('#form').css("display", "none")
     })
 
-    $('#saveEdit').click(function() {
+    $('#closeForm2').click(function() {
+        $('#form2').css("display", "none")
+    })
+
+    $('#save').click(function() {
         let email = $('#email'),
             pwd = $('#pasword'),
             isAdmin = $('#isAdmin').is(":checked")
@@ -69,7 +77,7 @@ $(document).ready(function() {
         let admins = JSON.parse(localStorage.getItem("Users"))
         if (admins != null) {
             admins.append(admin)
-            localStorage.setItem("Products", JSON.stringify(admins))
+            localStorage.setItem("Users", JSON.stringify(admins))
             return
         }
 
@@ -80,7 +88,7 @@ $(document).ready(function() {
     }
 
     $('#showAdmins').click(function() {
-        let admins = JSON.parse(localStorage.getItem("Products"))
+        let admins = JSON.parse(localStorage.getItem("Users"))
         if (admins == null) {
             alert("Empty")
             return
@@ -89,7 +97,8 @@ $(document).ready(function() {
         let admins_list = $('#list')
 
         $.each(admins, function(i, elem) {
-            let li = document.createElement('li'),
+            if (elem.isAdmin) {
+                let li = document.createElement('li'),
                 email = document.createElement('input'),
                 password = document.createElement('input'),
                 isAdmin = document.createElement('input'),
@@ -97,70 +106,71 @@ $(document).ready(function() {
                 edit = document.createElement('button'),
                 deleteBtn = document.createElement('button')
 
-            email.type = "text"
-            password.type = "text"
-            isAdmin.type = "checkbox"
-            isBanned.type = "checkbox"
+                email.type = "text"
+                password.type = "text"
+                isAdmin.type = "checkbox"
+                isBanned.type = "checkbox"
 
-            email.setAttribute("id", "email")
-            passowrd.setAttribute("id", "password")
-            isAdmin.setAttribute('id', 'isAdmin')
-            isBanned.setAttribute('id', "isBanned")
+                email.setAttribute("id", "email")
+                passowrd.setAttribute("id", "password")
+                isAdmin.setAttribute('id', 'isAdmin')
+                isBanned.setAttribute('id', "isBanned")
 
-            edit.classList.add("edit")
-            deleteBtn.classList.add("delete")
-            edit.innerHTML = "Edit"
-            deleteBtn.innerHTML = "Delete"
-            email.innerHTML = elem.email
-            password.innerHTML = elem.password
-            if (elem.isAdmin) {
-                isAdmin.checked = true
-            }else {
-                isAdmin.checked = false
+                edit.classList.add("edit")
+                deleteBtn.classList.add("delete")
+                edit.innerHTML = "Edit"
+                deleteBtn.innerHTML = "Delete"
+                email.innerHTML = elem.email
+                password.innerHTML = elem.password
+                if (elem.isAdmin) {
+                    isAdmin.checked = true
+                }else {
+                    isAdmin.checked = false
+                }
+
+                if (elem.isBanned) {
+                    isBanned.checked = true
+                }else {
+                    isBanned.checked = false
+                }
+
+                li.appendChild(email)
+                li.appendChild(password)
+                li.appendChild(isAdmin)
+                li.appendChild(isBanned)
+                li.appendChild(edit)
+                li.appendChild(deleteBtn)
+
+                admins_list.append(li)
             }
-
-            if (elem.isBanned) {
-                isBanned.checked = true
-            }else {
-                isBanned.checked = false
-            }
-
-            li.appendChild(email)
-            li.appendChild(password)
-            li.appendChild(isAdmin)
-            li.appendChild(isBanned)
-            li.appendChild(edit)
-            li.appendChild(deleteBtn)
-
-            admins_list.append(li)
         })
     })
 
     $('.edit').click(function() {
+        $('#edit_form').css("display", "block")
         let index = $('.edit').index(this),
-            users = JSON.parse(localStorage.getItem('Users'))
+            admins = JSON.parse(localStorage.getItem('Users'))
         
-        if (users != null) {
-            users[index].email = $('#email').val()
-            users[index].password = $('#password').val()
-            users[index].isAdmin = $('#isAdmin').is(':checked')
-            users[index].isBanned = $('#isBanned').is(':checked')
+        $("#id").text(index)
+        $('#form_email2').attr("value", admins[index].email)
+        $('#form_password2').attr("value", admins[index].password)
+        $('#form_isAdmin2').attr("value", admins[index].isAdmin)
+        $('#form_isBanned2').attr("value", admins[index].isBanned)
+    })
 
-            localStorage.setItem("Users", JSON.stringify(users))
-            return
-        }
+    $('#saveEdit').click(function() {
+        let index = $('#id').text()
+        admins = JSON.parse(localStorage.getItem('Users'))
 
-        users = []
-        let obj = {
-            email: $('#email').val(),
-            password: $('#password').val(),
-            isAdmin: $('#isAdmin').is(':checked'),
-            isBanned: $('#isBanned').is(':checked')
-        }
+        admins[index].email = $("#form_email").val()
+        admins[index].password = $("#form_password").val()
+        admins[index].isAdmin = $("#form_isAdmin").val()
+        admins[index].isBanned = $("#form_isBanned").val()
 
-        users.push(obj)
 
-        localStorage.setItem("Users", JSON.stringify(users))
+
+        localStorage.setItem("Users", JSON.stringify(products))
+        location.reload()
     })
 
     $('.delete').click(function() {
