@@ -44,7 +44,7 @@ let users = JSON.parse(localStorage.getItem("Users"))
         }
     }
 function validateEmail(email)  {
-    var re = /\S+@\S+\.\S+/;
+    var re = /^[a-zA-Z0-9_.+-]+@[a-zA-Z]+\.[a-zA-Z]+$/;
     return re.test(email);
 }
 
