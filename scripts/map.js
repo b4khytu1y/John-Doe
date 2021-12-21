@@ -15,7 +15,7 @@ ymaps.ready(function () {
         }, {
             iconLayout: 'default#imageWithContent',
             iconImageHref: 'images/logotype.png',
-            iconImageSize: [40, 40],
+            iconImageSize: [25, 25],
            iconImageOffset: [-5, -38],
             iconContentOffset: [15, 15],
             iconContentLayout: MyIconContentLayout
