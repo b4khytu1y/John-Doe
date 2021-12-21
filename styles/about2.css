@@ -59,3 +59,22 @@ li{
   margin-left: 100px;
 
 }
+
+.knopka{
+  width: 30px;
+  height: 20px;
+  position: absolute;
+ 
+  background: white;
+  top: 10px;
+  left: 10px;
+   display: none;
+
+}
+.lan{
+  width: 30px;
+  height: 4px;
+  margin: 4px auto;
+  background: black;
+   display: none;
+}

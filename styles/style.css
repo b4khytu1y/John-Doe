@@ -335,6 +335,39 @@ li{
   transform: scale(0.001);
 }
 
-footer{
-  background-color: black;
+
+.knopka{
+  width: 30px;
+  height: 20px;
+  position: absolute;
+ 
+  background: white;
+  top: 10px;
+  left: 10px;
+   display: none;
+
+}
+.lan{
+  width: 30px;
+  height: 4px;
+  margin: 4px auto;
+  background: black;
+   display: none;
+}
+
+.square{
+  height: 300px;
+  width: 500px;
+  background: #808080;
+  border-radius: 20%;
+  margin-left: 200px;
+  position: absolute;
+  background: rgb(171,193,21);
+  background: linear-gradient(90deg, rgba(171,193,21,1) 0%, rgba(250,243,8,1) 35%, rgba(235,255,89,1) 54%, rgba(255,85,0,1) 100%);
+}
+.baton{
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 250px;
+
 }

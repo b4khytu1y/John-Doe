@@ -9,12 +9,14 @@
      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles/footer2.css">
+      <link rel="stylesheet" type="text/css" href="styles/coolerthanmedia.css">
+   
 
  </head>
  <body>
     <div id="cursor"></div>
 	<div id="aura"></div>
-     <nav>
+     <nav class="header">
          <ul>
             
              <li><a href="login.html"><font face="Druk Wide"><b>Sign in</b></font></a>
@@ -22,6 +24,12 @@
             <li><a href="https://www.google.com/?gws_rd=ssl"><font face="Druk Wide"><b>Exit</b></font></a>
          </ul>
      </nav>
+     <div class="knopka">
+      <div class="lan"></div>
+      <div class="lan"></div>
+      <div class="lan"></div>
+   </div>
+     <div class="content">
 <div class="section">
     <h1 align="center"><font face="Noto Sans, sans-serif"></font>This is a rubber duck shop </h1>
     <h1 align="center"><p><font face="Noto Sans, sans-serif">To go to the main site, register or log into your existing account</font></p></h1>
@@ -30,7 +38,9 @@
 
 
 </div>
-    
+</div>
+<div class="clear"></div>
+    <div class="footer">
   <footer class="footer-distributed">
 
             <div class="logo123">
@@ -40,6 +50,7 @@
                 </div>
 
         </footer>
+        </div>
      <script src="./scripts/app.js"></script>
      <style type="text/css">
          .logo123{
@@ -47,7 +58,38 @@
             left: 500px;
             bottom: 40px;
          }
-         
+        
+.knopka{
+  width: 30px;
+  height: 20px;
+  position: absolute;
+ 
+  background: white;
+  top: 10px;
+  left: 10px;
+   display: none;
+
+}
+.lan{
+  width: 30px;
+  height: 4px;
+  margin: 4px auto;
+  background: black;
+   display: none;
+}
+
+
+         @media screen and (max-width: 900px){
+nav{
+   display: none;
+}
+.knopka{
+   display: block;
+}
+.lan{
+   display: block;
+}
+}
      </style>
     </body>
 </html>
