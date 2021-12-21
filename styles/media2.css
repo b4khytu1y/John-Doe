@@ -1,0 +1,454 @@
+@media screen and (max-width: 1440px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	width: -1px;
+}
+
+.imgsize{
+	width: 600px;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+}
+@media screen and (max-width: 1200px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	
+}
+
+.imgsize{
+	width: 600px;
+	position: relative;
+	top: 50px;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+}
+@media screen and (max-width: 1140px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	
+}
+.imgsize{
+	width: 600px;
+	position: relative;
+	top: 50px;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+}
+@media screen and (max-width: 992px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	
+}
+
+.imgsize{
+	width: 500px;
+	position: relative;
+	top: 60px;
+}
+}
+@media screen and (max-width: 960px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	
+}
+
+.imgsize{
+	width: 475px;
+	position: relative;
+	top: 60px;
+}
+.text-inform h1 {
+    color: #000;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+}
+@media screen and (max-width: 768px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+
+
+.knopka{
+	display: block;
+}
+.lan{
+	display: block;
+}
+.navigation{
+  display: none;
+}
+
+.ducks__desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 4%;
+    margin-top: 13%;
+    margin-bottom: 9%;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: block;
+
+}
+.sizeduck {
+    height: 40px;
+    position: relative;
+    top: -40px;
+    left: 170px;
+    
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 25px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 14px sans-serif;
+   
+}
+.footer-company-about {
+    display: none	;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+
+}
+
+@media screen and (max-width: 720px){
+	.ducks__desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 6%;
+    margin-top: 13%;
+    margin-bottom: 9%;
+}
+
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	
+}
+
+.imgsize{
+	width: 400px;
+	position: relative;
+	top: 60px;
+}
+.knopka{
+	display: block;
+}
+.lan{
+	display: block;
+}
+.navigation{
+  display: none;
+}
+.text-inform h1 {
+    color: #000;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+.tagline {
+    color: #6f6f6f;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
+
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: block;
+
+}
+.sizeduck {
+    height: 40px;
+    position: relative;
+   
+    
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 25px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 14px sans-serif;
+   
+}
+.footer-company-about {
+    display: none	;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 12px;
+}
+
+}
+@media screen and (max-width: 576px){
+.header{
+width: 100%;
+height: 30%
+}
+.content{
+width: 100%;
+height: 85%;
+
+}
+.footer{
+width: 100%;
+height: 5%;
+}
+.clear{
+	clear: both;
+}
+.photo-model{
+	height: 600px;
+	
+}
+
+.imgsize{
+	width: 300px;
+	position: relative;
+	top: 60px;
+}
+.knopka{
+	display: block;
+}
+.lan{
+	display: block;
+}
+.navigation{
+  display: none;
+}
+.text-inform h1 {
+    color: #000;
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+}
+.tagline {
+    color: #6f6f6f;
+    font-size: 15px;
+    
+
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: block;
+
+}
+.sizeduck {
+    height: 40px;
+    position: relative;
+    top: -40px;
+    left: 170px;
+    
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 25px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 14px sans-serif;
+   
+}
+.footer-company-about {
+    display: none	;
+}
+.ducks__desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 6%;
+    margin-top: 13%;
+    margin-bottom: 9%;
+}
+h3{
+    font-size: 14px;
+}
+p{
+    font-size: 11px;
+}
+
+
+}

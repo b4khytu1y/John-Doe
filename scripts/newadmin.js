@@ -11,8 +11,8 @@ $(document).ready(function() {
         return
     }
 
-    $('.banAdmin').click(function() {
-        let index = $('.banAdmin').index(this)
+    $('.ban').click(function() {
+        let index = $('.ban').index(this)
         users = JSON.parse(localStorage.getItem("Users"))
         users[index].isBanned = true
 
@@ -25,8 +25,8 @@ $(document).ready(function() {
         location.reload()
     })
 
-    $('.unbanAdmin').click(function() {
-        let index = $('.unbanAdmin').index(this)
+    $('.unban').click(function() {
+        let index = $('.unban').index(this)
         users = JSON.parse(localStorage.getItem("Users"))
         users[index].isBanned = false
 
@@ -48,12 +48,12 @@ $(document).ready(function() {
 
     })
 
-    $('#closeCreateForm').click(function() {
-        $('#create_form').css("display", "none")
+    $('#closeForm').click(function() {
+        $('#form').css("display", "none")
     })
 
-    $('#closeEdit_form').click(function() {
-        $('#edit_form').css("display", "none")
+    $('#closeForm2').click(function() {
+        $('#form2').css("display", "none")
     })
 
     $('#save').click(function() {
@@ -162,10 +162,10 @@ $(document).ready(function() {
         let index = $('#id').text()
         admins = JSON.parse(localStorage.getItem('Users'))
 
-        admins[index].email = $("#form_email2").val()
-        admins[index].password = $("#form_password2").val()
-        admins[index].isAdmin = $("#form_isAdmin2").val()
-        admins[index].isBanned = $("#form_isBanned2").val()
+        admins[index].email = $("#form_email").val()
+        admins[index].password = $("#form_password").val()
+        admins[index].isAdmin = $("#form_isAdmin").val()
+        admins[index].isBanned = $("#form_isBanned").val()
 
 
 
